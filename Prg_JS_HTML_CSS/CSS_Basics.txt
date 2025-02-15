@@ -1,0 +1,42 @@
+# Cascading Style Sheets
+
+Why CSS?
+    - Reusability
+    - Maintainance
+
+Ex - 
+h1 { --This intends all h1 tag to have the smae functionality
+    text-align: center;
+    color: blue;
+}
+
+Ex in lists - 
+li { --- all lists are made green
+    color: green;
+}
+
+If we want to change specific list elements and not all then , There are 3 steps - 
+1. Classes - 
+    Ex - 
+    HTML - 
+    <li class="havoc"> Orange </li>                            
+
+    CSS - (. represents class)
+    .havoc {
+        color: orange;
+    }
+
+2. IDs - 
+    Ex - 
+    HTML - 
+    <img src="jkasdfhak" id="maxup" />
+
+    CSS - (# represents id)
+    #maxup {
+        float: right;
+    }
+
+3. Combinators - Select by Relationship
+
+
+
