@@ -1,0 +1,49 @@
+# HyperText MarkUp Language
+
+It is not a programming language, its a markup language that is used to create web pages which are being used by browsers
+
+## MetaData Elements - (Set of tags that describes and gives infor about the Web page)
+<html>
+<head>
+<title>
+
+## Sectional Elements - (These tags define the sections of the web page)
+<body>
+<div>
+<h1>,<h2>....
+
+
+## Different styles of texting - 
+<b> - Bold
+<em> - Emphasised Text
+
+## Adding Images - 
+<img src = "{image_link}" width = "30%" />
+
+src - Mandatory field
+width - optional
+
+## Adding links - 
+<a href = "(web_link)"> Content Header </a> 
+
+## Lists - 
+#Unordered list - 
+<ul>
+    <li> List Item Contents </li>
+</ul>
+
+#Ordered list - 
+<ol>
+    <li> List Item Contents </li>
+</ol>
+
+
+## Table - 
+<table>
+    <tr>   ---- Table Row
+        <th> Table Header </th>
+    </tr>
+    <tr>
+        <td> Table Data </td>
+    </tr>
+</table>
