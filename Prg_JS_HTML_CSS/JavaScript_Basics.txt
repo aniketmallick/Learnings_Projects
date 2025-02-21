@@ -1,0 +1,28 @@
+
+# Declaring and initializing variable - 
+var x = 3;
+
+var fgImage = new SimpleImage("drewRobert.png");
+#fgImage will be pointing to the object which contains the image
+
+# Method call
+var w = fgImage.getWidth();
+
+# Function - No object required to access
+function square(x) {
+    var ans = x * x;
+    return ans;
+}
+
+var a = square(4);
+
+How does Javascript knows the type?
+1. Keeps track of it with the value
+2. Called "dynamically typed"
+
+# For types in Javascript
+for(var obj of image.values()) {
+    .....
+}
+
+In case of issues, Try to find bugs methodically
