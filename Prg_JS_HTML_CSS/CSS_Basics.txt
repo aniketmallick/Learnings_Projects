@@ -5,7 +5,7 @@ Why CSS?
     - Maintainance
 
 Ex - 
-h1 { --This intends all h1 tag to have the smae functionality
+h1 { --This intends all h1 tag to have the same functionality
     text-align: center;
     color: blue;
 }
@@ -40,3 +40,8 @@ If we want to change specific list elements and not all then , There are 3 steps
 
 
 
+CSS Colors - 
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_colors/Color_picker_tool
+
+Identified by hex number - #_R__G__B_
