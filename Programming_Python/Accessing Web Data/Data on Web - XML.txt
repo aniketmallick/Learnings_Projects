@@ -1,0 +1,32 @@
+In order to transfer data through internet we need to make it ina form which is accepted by others
+
+Ex - 
+XML
+JSON
+
+
+XML - 
+Share structured data throughout systems
+Ex - 
+<people>
+    <contact>
+        123124
+    </contact>
+</people>
+
+Visualise XML as a tree
+
+XML Schema - Contact between systems (will accept XML who will follow this Schema)
+XSD Schema - Accepted by W3C
+
+# XML import as tree
+import xml.etree.ElementTree as ET
+
+# ''' - Means it treats as multiline comment iwht every line we enter
+data = '''<person>
+        <name>Chuck</name>
+    </person>'''
+
+tree = ET.fromstring(data) # Converts the data into a tree(can break if data is not proper)
+print('Name :',tree.find('name').text) # Taking out the content
+print('Name :',tree.find('email').get('hide')) # Taking out the attribute

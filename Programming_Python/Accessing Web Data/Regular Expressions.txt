@@ -1,0 +1,54 @@
+# import Reg Exp
+import re
+
+# Similar to .find() works .search()
+if re.search('From:',line):
+    ....
+
+# Using .search() like startswith()
+if re.search('^From:'):
+    ...
+
+
+# . - matches any chanracter
+# * - the character any number of times
+Ex - ^X.*: - means starts with X and then any character(.) any number of times and after :
+
+Ex - ^X-/S+: - means starts with X and then - and then non-whitespace character and + means >=1 number of times (So basically ensures no whitespace)
+
+
+# Matching Strings to be Extracted - 
+re.findall()
+x = "There are 2 numbers: 12 and 34"
+re.findall('[0-9]+',x)  // O/P -> ['2','12','34']
+
+Ex - re.findall('[AEIOU]+',x)
+
+
+# Greedy Matching:
+String - "From: Using the: characters"
+'^F.+:' - Starts with F and . means any character and + means more than 1 number of times 
+ as the + pushes the search in both the sides(tries to find the largest string)
+So the output comes up to be - 'From: Using the:' (As it went with the longest string)
+
+# Non-greedy Matching - 
+String - "From: Using the: characters"
+'^F.+?:' - ? means one or more characters but not greedy
+So the output is - 'From:'
+
+# Fine Tuning String Extraction
+String - 'From abc.ad@sad.asa.as Sat dsa'
+'/S+@/S+' - Extracts the complete mailID(Non-Blank more than 1 then @ then non-blank character more than 1)
+
+# Parenthesis are not part of match but they tell where to start and where to stop
+y = re.findall('^From (/S+@/S+)')  // O/P - abc.ad@sad.asa.as
+
+
+# Extracting the sad.asa.a after @ using regex -
+'@([^ ]*)' - [^ ] means everything except non-blank characters and the * means any number of times
+
+# Escape character -
+for # - \#
+
+
+

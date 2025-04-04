@@ -1,0 +1,51 @@
+# To take user input
+user_input = input("Please Enter Input")
+user_input = raw_input("Please Enter Input")
+
+# Type_casting -
+try:
+    input = float(user_input)
+except:
+    print("Input cannot be converted from string to float")
+
+# Loops - 
+for input in user_input: 
+
+
+Strings - 
+
+len_str = len(str)
+
+
+# Slicing a string -
+s = str[4:10]   # starting from index 4 to index 9
+s1 = str[:]   # empty means complete str (so from 0 to index - 1)
+
+# Using in as a Logical Operator:
+if 'a' in 'baboon':
+    print("YES")
+
+# String comparison -
+if word < 'banana': 
+    print("Your word comes before banana")
+
+# String Library - 
+word.lower()
+word.upper
+
+dir(word) # Shows the string Library functions with the word 
+
+pos = word.find("xyz") # Searches in the word and returns the index of starting x
+
+# Search and replace
+ns = word.replace("Bob", "Jane")  # Replaces Bob with Jane
+
+# Stripping Whitespaces - 
+.lstrip() # Left Spaces are removed
+.rstrip() # Right Spaces are removed
+.strip() # Both side Spaces are removed
+
+# Find after a position - 
+pos = data.find(' ',from_pos) # after from_pos position it will try to find the ' '
+
+

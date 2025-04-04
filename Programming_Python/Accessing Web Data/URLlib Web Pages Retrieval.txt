@@ -1,0 +1,6 @@
+import urllib.request, urllib.parse, urllib.error
+
+fhand = urllib.request.urlopen('http://p3.de/document.html') # Works like a file opener but in this case it can access the data in the web page
+for line in fhand:
+    print(line.decode().strip()) # This prints only the content not the headers, Headers can be retrieved seperately 
+

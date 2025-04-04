@@ -1,0 +1,6 @@
+Web Crawling / Spidering the web - Search Engines scrape web pages
+
+BeautifulSoup helps to scrap the web pages - 
+pip install beautifulsoup4
+
+import BeautifulSoup

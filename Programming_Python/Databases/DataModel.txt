@@ -1,0 +1,13 @@
+# While Designing a Data Model, think of what is the most important thing that we should have
+# Next start finding its relation 
+
+
+# Primary Key - Unique keys ina table which are used to point to other table(Basically a FK for that table)
+# Logical Key -  That unique key via which we identify from the outside world
+
+# Joins - 
+Select Album.title,Artist.name from Album join Artist on Album.artist_id = Artist.id
+
+# Joining 2 tables without an on clause gives all possible combination of rows
+
+# Multiple join can be done in clause

@@ -1,0 +1,58 @@
+# Strings are immutable but
+# Lists are mutable
+list = [ 'a', 1, 'b' ]
+list[1] = 2
+
+# Length of list
+len(list)
+
+# Loop on list
+for element in list:
+    element
+
+# Range 
+print(range(4))
+O/P - [ 0, 1, 2, 3 ]
+
+# Accessing the range
+for i in range(len(list)):
+    ranged_list = list[i]
+    print(ranged_list)
+
+# List can be added and sliced
+list = list1 + list2
+list[1:4]
+
+# Building lists from Scatch
+x = list()
+x.append("a")
+x.append(2)
+
+# To check all methods in lists
+x = list()
+dir(list)
+
+# Find in a list
+flag = 10 in list # returns True or False
+flag = 10 not in list # returns True or False
+
+# Ordering list - (list always are inorder and it can be sorted using sort())
+list.sort()
+
+# Max and min and sum - 
+max(nums)
+min(nums)
+sum(nums)
+
+
+# Split
+txt = "Hello I          am     good"
+txt_split = txt.split() // This splits the txt into a list and you can access each of the words
+txt_split[1] // O/P - I
+
+In split, delimeter can be specified or eitherwise it will take in what is between the words
+.split(';')
+
+
+# Douple split Pattern
+Splitting a string and then again spliting the output word of the list
