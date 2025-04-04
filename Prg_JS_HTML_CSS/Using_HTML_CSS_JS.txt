@@ -1,0 +1,34 @@
+HTML & CSS - create & style pages
+Js - Event driven Programming to create interactive pages
+
+# Buttons with Divs - 
+
+<input type = "button" value = "click here" onclick = "alert('clicked button')">
+        |-> attribute   |-> Txt disp on bttn    |-> triggers event handler on click
+This tag doesnot have any close tag
+
+Also we can include the onclick code in a JS function - 
+<input type = "button" value = "click here" onclick = "dochange()">
+
+Js - 
+func dochange() {
+    alert('clicked button via JS impl');
+}
+
+## Ids are distinct and every element must have a distinct ID
+   and in contrast many elements can have the same class
+
+# Via JS we can perform with the web pages independently
+  document - refers to the entire HTML document
+
+# To access any element by id - 
+  var div1 = document.getElementById("div1");  // Returns the elements object
+
+# To change the class of a element - 
+  div1.classname("desiredclass");
+
+# To change the inner content of the id
+  div1.innerHTML = "NewText"
+
+## Canvas
+  
