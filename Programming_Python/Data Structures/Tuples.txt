@@ -1,0 +1,48 @@
+# Tuples are like Lists -
+x = ('a', 'b', 'c')
+print(x[0]) // O/P - a
+print(max(x)) // O/P - c
+
+# BUT Tuples are immutable -
+x[1] = 'd' --- Error
+
+# Tuples cannot be sort(), append(), reverse()
+
+# Tuples are more efficient
+When we are making temporary variables we try to use tuples rather than list
+
+# Tuples assignment -
+(a, b) = (4, 'fred')
+
+# Tuples are comparable
+(0,1,2)<(1,2,3) -- It matches one by one from the left side
+('j','b')>('j','d') // O/P - False
+
+
+# Sorting List of Tuples
+d = {'a':2, 'b':9}
+d.items()
+
+sorted(d.items()) // Sorts the List of Tuples
+
+
+For Loop on Sorted List -
+for k, v in sorted(d.items()):
+    print(k,v)
+
+
+
+# Sort by values instead of key
+d = {'a':2, 'b':9}
+tmp = list()
+for k,v in d.items():
+    tmp.append((v,k)) # ---- Inserting in value and key format
+
+tmp = sorted(tmp, reverse=True)
+print(tmp) -- O/P - [(9,b),(2,a)]
+
+
+# List Comprehension (creates a dynamic list, in this case we make a list of reversed tuples and then sort it)
+d = {'a':2, 'b':9}
+print(sorted( [ (v,k) for k, v in d.items() ] ))     ---- O/P - [(2,a),(9,b)]
+

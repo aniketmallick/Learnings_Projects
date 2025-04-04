@@ -1,0 +1,7 @@
+Majorly used for serialisation
+
+import json
+data = '''
+'''
+info = json.loads(data)
+print(data['ac'])

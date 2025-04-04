@@ -1,0 +1,35 @@
+# Relational Databases - Model data by storing rows and columns in table
+                         Efficiently retrieve data where multiple relations are present between data
+
+# Database - Collection of Tables
+# Relation - Table
+# Tuple - Row
+# Attribute - Column
+
+
+# SQL used to access Relational Databases
+# For Practice -  Using SQLite (can be imported directly from python) (Download from internet - open source)
+
+# Create Table - 
+CREATE TABLE Users {
+    name VARCHAR(128),
+    email VARCHAR(128)
+}
+
+# Insert in Database
+INSERT INTO Users(name, email) VALUES ('Rakesh',  'rakesh@gmail.com')
+
+# Delete a Statement - 
+DELETE FROM Users WHERE email="dsfn@gmail.com"
+
+
+# Update Table - 
+UPDATE Users SET name='Rakeshwa' WHERE email="dsfn@gmail.com"
+
+# Retrieve Records
+SELECT * FROM Users
+
+# Sorting with ORDER BY (asc / desc)
+SELECT * FROM Users ORDER BY name
+
+#Mod2asignment gives a clear picture of using sqlite with python 

@@ -1,0 +1,31 @@
+# Python has built in support for TCP Sockets
+
+import socket
+mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM) (This creates the object of the socket)
+mysock.connect(('data.p4de.org',80)) # Host,port(This sets the Connection)
+
+# HTTP protocol is the set of rules to allow browsers to retrieve web documents from servers over the internet
+
+http://www.ads.com/page1.html
+protocol   host     document
+
+Whenever a link is clicked a GET request is done to the server and then the content is received and parsed out in the browser
+
+# telnet - network protocol that allows users to remotely access a computer's command line interface
+telnet www.abc.com 80
+#once you are in you can pass in GET or other requests
+
+# Sample HTTP Get and Receive
+import socket
+mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+mysock.connect(('data.p4de.org',80))
+cmd = 'GET http://data.p4de.org/romeo.txt HTTP/1.0\r\n\r\n'.encode()
+mysock.send(cmd) # Send the command from the Connection
+
+while True:
+    data = mysock.recv(512); # Receive 512 bytes of data
+    if(len(data)<1):
+        break
+    print(data.decode)  # This will first print Metadata and the content of the file
+mysock.close()
+

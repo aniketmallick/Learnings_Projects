@@ -1,0 +1,25 @@
+# 1 - many 
+Like mother -> children
+
+# Many <-> Many 
+In this there is no seperate primary key
+So we need to model their relationship
+So, we need to add a connection table with 2 foreign keys
+
+            Author-Book junction table
+Books -----<  Author -
+                Books  >------- Author
+
+Many to many tables always have a junction table where in the mappings and the extra attributes can be kept
+
+Ex - 
+User      User - Course                               Course
+id           user_id                                  id
+name         course_id                                course_name
+             role
+             Primary Key(user_id, course_id)
+
+Role is an extra attribute and can be kept to designate roles with the combinations
+
+User has 1 to many relation with User-Course and 
+User-Course has many to 1 relation with Course

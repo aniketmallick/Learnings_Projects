@@ -1,0 +1,34 @@
+# Opening a file (r -> read, w -> write)
+fhand = open('filename.txt',r) # fhand is basically the handle to operate on the file
+
+# New Line character -
+( /n - is a character ) 
+str = "Hello/nWorld"
+print(str)
+
+# Iterating through lines
+fhand = open('file.txt') # default is read mode
+for lines in fhand:
+    print(lines) # You might see newlines in between we can delete them by putting lines = lines.rstrip()
+
+# Iterating through each letter
+fhand = open('file.txt')
+text = fhand.read()
+print(text[:20])
+
+# Searching by startswith
+for line in fhand:
+    if line.startswith('From: '):
+        print(line)
+
+# Match with some text in lines
+for line in fhand:
+    if not '@uct' in line:
+        continue
+    print(line)
+
+
+
+
+    
+

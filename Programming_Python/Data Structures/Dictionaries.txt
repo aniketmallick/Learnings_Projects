@@ -1,0 +1,63 @@
+# Dictionaries are Key - value pairs 
+
+# Prior to Python 3.7 Dictionaries did not keep entries in Order of insertion
+# From 3.7 onwards, insertion order is mentioned
+
+# Implmn - 
+cabinet = dict()
+cabinet['a'] = 5
+
+# Empty dict 
+ss = {}
+
+# dict with values
+abc = {'abc': 2, 'asa':99}
+
+# Updating in dict
+cabinet['a'] = cabinet['a'] + 2
+
+# Checking a key in dict
+'a' in cabinet  // O/P - True
+
+# Dictionaries throw error when a key which is not present is tried to be accessed
+if name in count:
+    x = count[name]
+else
+    x = 0
+
+# Alternatively, we can do this by get method - (2nd parameter is Default value)
+x = count.get(name, 0) 
+
+# Retrieving list of keys and values
+print(list(cabinet)) # Prints the keys
+print(list(cabinet.keys())) # Prints the keys
+print(list(cabinet.values())) # Prints the values
+print(list(cabinet.items())) # Prints the the complete items Ex - [('abc', 1)]  --- In tuple from
+
+# Two Iteration variables (as items return a tuple we can hover through it)
+for aa,bb in jj.items():
+    print(aa,bb)
+
+# Example of using Dictionaries to count the emailIds who have mailed the most
+name = input("Enter file:")
+if len(name) < 1:
+    name = "mbox-short.txt"
+handle = open(name)
+
+dict = {}
+for lines in handle:
+    if lines.startswith('From '):
+        # print(lines)
+        words = lines.split()
+        dict[words[1]] = dict.get(words[1], 0) + 1
+        
+
+maxCount = 0
+maxWord = None
+
+for mailIds in dict:
+    if maxCount<dict[mailIds]:
+        maxCount = dict[mailIds]
+        maxWord = mailIds
+        
+print(maxWord, maxCount)

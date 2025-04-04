@@ -1,0 +1,18 @@
+# Finding ASCII of a character
+ord('H') // O/P - 72
+
+UTF-16 - Fixed Length - 2Bytes
+UTF-32 - Fixed Length - 4Bytes
+UTF-8 - 1-4 Bytes - Compatible with ASCII
+
+In Python3 - 
+x = b'abc'
+type(x) // bytes
+
+x = u'dffh'
+type(x) // Unicode
+
+# In python3 internally all strings are considered as UNICODE
+# So working with string variables it works
+# But working with data from the internet , sending or receiving packets of data we have encode & decode it (UTF-8)
+
